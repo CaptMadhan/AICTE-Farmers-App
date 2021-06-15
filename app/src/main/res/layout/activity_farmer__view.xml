@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Farmer_View"
+    android:background="@drawable/main_color_selector">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/main_card"
+        android:layout_width="376dp"
+        android:layout_height="683dp"
+        android:layout_centerInParent="true"
+        app:cardCornerRadius="3dp"
+        app:cardElevation="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.457">
+        <TextView
+            android:id="@+id/dashboard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dashboard"
+            android:textSize="45dp"
+            android:textAlignment="center"
+            />
+        <Button
+            android:id="@+id/add_crop"
+            android:layout_width="150dp"
+            android:layout_height="80dp"
+            android:text="Add Item for sale"
+            android:textSize="20dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginLeft="20dp"
+            />
+        <Button
+            android:id="@+id/remove_crop"
+            android:layout_width="150dp"
+            android:layout_height="80dp"
+            android:text="Remove Item"
+            android:textSize="20dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginLeft="200dp"
+            />
+
+        <RelativeLayout
+            android:id="@+id/sub_card"
+            android:layout_width="match_parent"
+            android:layout_height="520dp"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="160dp"
+            android:background="@drawable/blackb3"
+            android:scrollbars="vertical">
+
+            <TextView
+                android:id="@+id/items"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:text="ITEMS"
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/quantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="230dp"
+                android:layout_marginTop="10dp"
+                android:text="Quantity            (in Kgs)"
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/horizontal_divider"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/quantity"
+                android:layout_centerHorizontal="true"
+                android:text="--------------------------------------------"
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/vertical_divider"
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="|||||||||||||||||||||||||"
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/wheat"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/horizontal_divider"
+                android:layout_marginLeft="10dp"
+                android:text="Wheat"
+                android:textSize="30dp"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/wheat"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:text="Unpolished Rice"
+                android:textSize="30dp"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/wheat_number"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/horizontal_divider"
+                android:layout_marginLeft="70dp"
+                android:layout_toRightOf="@id/vertical_divider"
+                android:background="@drawable/blackb2"
+                android:gravity="center"
+                android:text="50"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/horizontal_divider"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/vertical_divider"
+                android:background="@drawable/blackb2"
+                android:gravity="center"
+                android:text="+"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/horizontal_divider"
+                android:layout_marginLeft="120dp"
+                android:layout_toRightOf="@id/vertical_divider"
+                android:background="@drawable/blackb2"
+                android:gravity="center"
+                android:text="-"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/rice_number"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/wheat_number"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="40dp"
+                android:layout_toRightOf="@id/vertical_divider"
+                android:background="@drawable/blackb2"
+                android:gravity="center"
+                android:text="90"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/wheat_number"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="40dp"
+                android:layout_toRightOf="@id/vertical_divider"
+                android:background="@drawable/blackb2"
+                android:gravity="center"
+                android:text="+"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/wheat_number"
+                android:layout_marginLeft="120dp"
+                android:layout_marginTop="40dp"
+                android:layout_toRightOf="@id/vertical_divider"
+                android:background="@drawable/blackb2"
+                android:gravity="center"
+                android:text="-"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
